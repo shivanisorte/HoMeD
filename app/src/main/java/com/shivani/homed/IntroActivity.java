@@ -16,7 +16,7 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_intro);
 
         lottieAnimationView = findViewById(R.id.lottie);
-        lottieAnimationView.animate().translationY(1600).setDuration(1000).setStartDelay(4000);
+        lottieAnimationView.animate().translationY(1600).setDuration(1000).setStartDelay(2000);
 
 
     }
