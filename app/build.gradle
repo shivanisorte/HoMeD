@@ -38,4 +38,15 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation 'com.airbnb.android:lottie:3.4.1'
+
+    implementation 'com.cuberto:liquid-swipe:1.0.0'
+
+    //implementation 'com.android.support:design:29.0.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.31"
+    implementation 'androidx.core:core:1.7.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
+
+
 }
