@@ -21,9 +21,9 @@
             android:fontFamily="@font/francois_one"
             android:text="Welcome To HoMeD"
             android:gravity="center"
-            android:textColor="@color/black"
-            android:background="@color/aboveactionbar"
-            android:textSize="26dp" />
+            android:textColor="@color/white"
+            android:background="#5019BD"
+            android:textSize="30dp" />
 
 
         <ImageView
@@ -32,7 +32,7 @@
             android:layout_width="90dp"
             android:layout_marginTop="50px"
             android:layout_height="90dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/med" />
 
         <TextView
             android:layout_below="@id/heading"
@@ -84,7 +84,7 @@
             android:layout_marginTop="40dp"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/vax" />
 
         <TextView
             android:id="@+id/nametext1"
@@ -136,7 +136,7 @@
             android:layout_marginTop="40dp"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/healthvit" />
 
         <TextView
             android:id="@+id/nametext2"
