@@ -60,6 +60,7 @@ public class LoginActivity extends AppCompatActivity {
         // checking if user is null or not
         if (mAuth != null) {
             currentUser = mAuth.getCurrentUser();
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
         }
 
         mlogin.setOnClickListener(new View.OnClickListener() {

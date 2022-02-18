@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="401dp"
+        android:layout_height="850dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/francois_one"
+            android:text="Welcome To HoMeD"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="#5019BD"
+            android:textSize="28dp" />
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_below="@id/heading"
+            android:layout_width="90dp"
+            android:layout_marginTop="38px"
+            android:layout_height="90dp"
+            android:src="@drawable/med" />
+
+        <TextView
+            android:layout_below="@id/heading"
+            android:id="@+id/nametext"
+            android:layout_marginTop="38px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:fontFamily="@font/francois_one"
+            android:text="MEDICATION ALERT"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <!--            android:textStyle="bold"-->
+
+        <TextView
+            android:id="@+id/desctext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nametext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Add your medication details here to get timely reminders"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/actionn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desctext"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/img1"
+            android:width="250dp"
+            android:height="45px"
+            android:fontFamily="@font/francois_one"
+            android:text="ADD MEDICATION"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_below="@id/actionn"
+            android:layout_marginTop="27dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/vax" />
+
+        <TextView
+            android:id="@+id/nametext1"
+            android:layout_below="@id/actionn"
+            android:layout_marginTop="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img2"
+            android:fontFamily="@font/francois_one"
+            android:text="VACCINATION REMINDERS"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <!--            android:textStyle="bold"-->
+
+        <TextView
+            android:id="@+id/desctext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nametext1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/img2"
+            android:text="Check your vaccination status from here."
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/actionn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desctext1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/img2"
+            android:width="250dp"
+            android:height="45px"
+            android:fontFamily="@font/francois_one"
+            android:text="VACCINATION STATUS"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_below="@id/actionn1"
+            android:layout_marginTop="27dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/healthvit" />
+
+        <TextView
+            android:id="@+id/nametext2"
+            android:layout_below="@id/actionn1"
+            android:layout_marginTop="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img3"
+            android:fontFamily="@font/francois_one"
+            android:text="HEALTH VITALS"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <!--            android:textStyle="bold"-->
+
+        <TextView
+            android:id="@+id/desctext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nametext2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/img3"
+            android:text="Check your current vitals and measures to improve them."
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/actionn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desctext2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/img2"
+            android:width="250dp"
+            android:height="45px"
+            android:fontFamily="@font/francois_one"
+            android:text="CHECK VITALS"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
