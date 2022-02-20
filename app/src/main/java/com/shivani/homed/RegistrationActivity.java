@@ -27,7 +27,7 @@ import java.util.HashMap;
 
 public class RegistrationActivity extends AppCompatActivity {
 
-    private EditText email, password, name, phonenum, pincode;
+    private EditText email, password, name, phonenum;
     private Button mRegister;
     private TextView existaccount;
     private ProgressDialog progressDialog;
@@ -45,7 +45,7 @@ public class RegistrationActivity extends AppCompatActivity {
         name = findViewById(R.id.register_name);
         password = findViewById(R.id.register_password);
         phonenum =  findViewById(R.id.enterphonenum);
-        pincode = findViewById(R.id.enterpincode);
+//         pincode = findViewById(R.id.enterpincode);
         mRegister = findViewById(R.id.register_button);
         existaccount = findViewById(R.id.homepage);
         mAuth = FirebaseAuth.getInstance();
@@ -59,7 +59,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 String uname = name.getText().toString().trim();
                 String pass = password.getText().toString().trim();
                 String phnum = phonenum.getText().toString().trim();
-                String pin = pincode.getText().toString().trim();
+//                 String pin = pincode.getText().toString().trim();
                 if (!Patterns.EMAIL_ADDRESS.matcher(emaill).matches()) {
                     email.setError("Invalid Email");
                     email.setFocusable(true);
@@ -67,7 +67,8 @@ public class RegistrationActivity extends AppCompatActivity {
                     password.setError("Length Must be greater than 6 character");
                     password.setFocusable(true);
                 } else {
-                    registerUser(emaill, pass, uname, phnum, pin);
+                    registerUser(emaill, pass, uname, phnum);
+//                     registerUser(emaill, pass, uname, phnum, pin);
                 }
             }
         });
@@ -79,7 +80,8 @@ public class RegistrationActivity extends AppCompatActivity {
         });
     }
 
-    private void registerUser(String emaill, final String pass, final String uname, final String phnum, final String pin) {
+//     private void registerUser(String emaill, final String pass, final String uname, final String phnum, final String pin)
+    private void registerUser(String emaill, final String pass, final String uname, final String phnum) {
         progressDialog.show();
         mAuth.createUserWithEmailAndPassword(emaill, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -94,7 +96,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     hashMap.put("uid", uid);
                     hashMap.put("name", uname);
                     hashMap.put("phonenumber",phnum);
-                    hashMap.put("pincode",pin);
+//                     hashMap.put("pincode",pin);
 
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
                     DatabaseReference reference = database.getReference("Users");
