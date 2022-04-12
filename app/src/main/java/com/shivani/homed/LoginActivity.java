@@ -58,10 +58,10 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         // checking if user is null or not
-        if (mAuth != null) {
-            currentUser = mAuth.getCurrentUser();
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-        }
+//        if (mAuth != null) {
+//            currentUser = mAuth.getCurrentUser();
+//            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//        }
 
         mlogin.setOnClickListener(new View.OnClickListener() {
             @Override

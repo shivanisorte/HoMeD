@@ -127,35 +127,63 @@
 
 
     <TextView
-        android:id="@+id/pin"
+        android:id="@+id/gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/enterphonenum"
         android:layout_marginStart="35dp"
         android:layout_marginTop="10dp"
-        android:text="Pin Code"
+        android:text="Gender"
         android:textColor="@color/black" />
 
     <EditText
-        android:id="@+id/enterpincode"
+        android:id="@+id/entergender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/pin"
+        android:layout_below="@+id/gender"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/edit"
-        android:drawableStart="@drawable/ic_baseline_pin_drop_24"
-        android:hint="Pin Code"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:hint="M for Male, F for Female"
+        android:inputType="textCapCharacters"
+        android:maxLength="1"
+        android:padding="8dp" />
+
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entergender"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Age"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/enterage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit"
+        android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+        android:hint="Age"
         android:inputType="number"
+        android:maxLength="2"
         android:padding="8dp" />
 
     <Button
         android:id="@+id/register_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/enterpincode"
+        android:layout_below="@+id/enterage"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
